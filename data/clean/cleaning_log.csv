@@ -1,0 +1,7 @@
+step,rows_before,rows_after,rows_removed,reason
+Join collision + vehicle summary,101525,101525,0,"One row per accident, no duplicates"
+Drop duplicate accidents,101525,101525,0,accident_index must be unique
+Drop missing coordinates,101525,101523,2,DBSCAN needs coordinates
+Drop coordinates outside Great Britain,101523,101523,0,Impossible locations
+"Create hour, month, weekday",101523,101523,0,Rows with unreadable date or time removed
+Drop invalid speed limits,101523,101523,0,Speed limit missing or not a standard value
