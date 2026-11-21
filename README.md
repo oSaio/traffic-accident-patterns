@@ -1,4 +1,4 @@
-# \ Traffic Accident Patterns
+# Traffic Accident Patterns
 
 # 
 
